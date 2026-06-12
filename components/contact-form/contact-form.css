@@ -23,7 +23,13 @@ body {
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border-color: var(--color-tertiary);
+  border-color: var(--color-tertiary-dark);
+}
+
+.contact-form input:focus::placeholder,
+.contact-form textarea:focus::placeholder {
+  color: var(--color-tertiary-dark);
+  font-weight: var(--font-weight-bold);
 }
 
 .contact-form-btn {
