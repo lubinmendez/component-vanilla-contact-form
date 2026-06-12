@@ -41,6 +41,8 @@ body {
   border-radius: 0.5rem;
   font-size: var(--font-size-m);
   cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent; /* Remove mobile tap highlight */
 }
 
 .contact-form-btn:hover {
