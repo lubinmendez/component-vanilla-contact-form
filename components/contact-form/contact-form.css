@@ -37,13 +37,11 @@ body {
   border-color: var(--color-tertiary-dark);
   color: var(--color-tertiary-dark);
 }
-
-/* Styles applied when navigating with keyboard */
 .contact-form-btn:focus-visible {
   outline: none;
   background-color: var(--color-tertiary-dark);
 }
-
+/* */
 .contact-form-btn {
   align-self: center;
   padding: 0.9rem 1.5rem;
