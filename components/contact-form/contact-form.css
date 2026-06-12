@@ -31,7 +31,7 @@ body {
   color: var(--color-tertiary-dark);
 }
 
-/* Styles applied when navigating with keyboard */
+/* Override global Styles applied when navigating with keyboard for this component*/
 .contact-form input:focus-visible,
 .contact-form textarea:focus-visible {
   border-color: var(--color-tertiary-dark);
