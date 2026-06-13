@@ -88,3 +88,9 @@ This stylesheet is loaded after global styles so it can replace default keyboard
 .contact-form-btn:active {
   transform: scale(0.98);
 }
+
+/* Show error border only after the user has started typing (placeholder is not shown) and the input is invalid */
+.contact-form input:invalid:not(:placeholder-shown),
+.contact-form textarea:invalid:not(:placeholder-shown) {
+  border-color: var(--color-error);
+}
