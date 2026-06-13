@@ -18,7 +18,7 @@ body {
   padding: 0.9rem;
   border: 1px solid var(--color-neutral-400);
   border-radius: 0.5rem;
-    outline: none; /* Remove browser's default outline to showcase custom border color on focus */
+  outline: none; /* Remove browser's default outline to showcase custom border color on focus */
 }
 
 .contact-form-btn {
@@ -32,6 +32,16 @@ body {
   cursor: pointer;
   user-select: none;
   -webkit-tap-highlight-color: transparent; /* Remove mobile tap highlight */
+}
+
+/* Transitions for smooth visual feedback on interactions: */
+.contact-form input,
+.contact-form textarea {
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.contact-form-btn {
+  transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
 /* Hover */ 
