@@ -28,6 +28,7 @@
   border: 1px solid var(--color-neutral-400);
   border-radius: 0.5rem;
   outline: none; /* Remove browser's default outline to showcase custom border color on focus */
+  color: var(--color-neutral-900); /* typed text should be dark/black */
 }
 
 .contact-form-btn {
@@ -77,7 +78,6 @@ This stylesheet is loaded after global styles so it can replace default keyboard
 .contact-form input:focus-visible,
 .contact-form textarea:focus-visible {
   border-color: var(--color-tertiary-dark);
-  color: var(--color-tertiary-dark);
 }
 .contact-form-btn:focus-visible {
   outline: none;
