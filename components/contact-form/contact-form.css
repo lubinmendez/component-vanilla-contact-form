@@ -21,27 +21,6 @@ body {
     outline: none; /* Remove browser's default outline to showcase custom border color on focus */
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus {
-  border-color: var(--color-tertiary-dark);
-}
-
-.contact-form input:focus::placeholder,
-.contact-form textarea:focus::placeholder {
-  color: var(--color-tertiary-dark);
-}
-
-/* Override global Styles applied when navigating with keyboard for this component*/
-.contact-form input:focus-visible,
-.contact-form textarea:focus-visible {
-  border-color: var(--color-tertiary-dark);
-  color: var(--color-tertiary-dark);
-}
-.contact-form-btn:focus-visible {
-  outline: none;
-  background-color: var(--color-tertiary-dark);
-}
-/* */
 .contact-form-btn {
   align-self: center;
   padding: 0.9rem 1.5rem;
@@ -55,14 +34,43 @@ body {
   -webkit-tap-highlight-color: transparent; /* Remove mobile tap highlight */
 }
 
-.contact-form-btn:hover {
+/* Hover */ 
+@media (hover: hover) and (pointer: fine) { /*Restrict hover to devices with hover capability and fine pointer */
+  .contact-form-btn:hover {
+    background-color: var(--color-tertiary-dark);
+  }
+}
+
+/* Focus */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--color-tertiary-dark);
+}
+
+.contact-form input:focus::placeholder,
+.contact-form textarea:focus::placeholder {
+  color: var(--color-tertiary-dark);
+}
+
+/* Focus-visible */
+/* Override global focus-visible styles for this component.
+This stylesheet is loaded after global styles so it can replace default keyboard navigation styles. */
+.contact-form input:focus-visible,
+.contact-form textarea:focus-visible {
+  border-color: var(--color-tertiary-dark);
+  color: var(--color-tertiary-dark);
+}
+.contact-form-btn:focus-visible {
+  outline: none;
   background-color: var(--color-tertiary-dark);
 }
 
+/* Active*/
 .contact-form-btn:active {
   transform: scale(0.98);
 }
 
+/*media queries*/
 @media (min-width: 768px) {
   .contact-form {
     max-width: 600px;
