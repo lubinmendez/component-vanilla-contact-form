@@ -12,7 +12,8 @@
 
   <div class="contact-form-wrapper"> <!-- Only used to center the form. Remove this wrapper and its CSS if you don't need it centered. -->
 
-    <form class="contact-form">
+    <!-- If you don't want to use Formspree for email submissions, remove the action and method attributes -->
+    <form class="contact-form" action="https://formspree.io/f/xojzyvzw" method="POST">
       <input type="text" placeholder="Full name" name="fullName" aria-label="Full name" autocomplete="name" required />
 
       <input type="email" placeholder="Email address" name="email" aria-label="Email address" autocomplete="email" required />
