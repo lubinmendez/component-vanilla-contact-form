@@ -32,10 +32,7 @@ ul {
   list-style: none;
 }
 
-/* 
-  Default focus-visible styles for keyboard navigation.
-  Component-specific styles loaded later can override these rules when needed.
-*/
+/* Default customized visual selection box for Tab navigation for all focusable interactive elements. If you whant to override base focus-visible styles for a component. Make sure the component's stylesheet is loaded after base-styles so it can replace default keyboard navigation styles. */
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,

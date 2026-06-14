@@ -73,8 +73,8 @@
 }
 
 /* Focus-visible */
-/* Override global focus-visible styles for this component.
-This stylesheet is loaded after global styles so it can replace default keyboard navigation styles. */
+/* Override focus-visible base styles for this component.
+This stylesheet is loaded after base-styles so it can replace default keyboard navigation styles. */
 .contact-form input:focus-visible,
 .contact-form textarea:focus-visible {
   border-color: var(--color-tertiary-dark);
